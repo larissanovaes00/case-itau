@@ -1,5 +1,7 @@
 import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
 import { Component, OnInit } from '@angular/core';
+import { Answers } from './../../models/answers.model';
+import { Question } from './../../models/question.model';
 import { QuestionsService } from './../../services/questions/questions.service';
 
 @Component({
@@ -17,20 +19,15 @@ export class StepperCotacaoComponent implements OnInit {
   h1Text = 'quer saber quanto custa seu seguro?';
   h1TextSecondary = 'comece respondendo as perguntas abaixo e descubra :)';
 
-  question: any;
-  answers = [];
+  questions: Question[] = [];
+  answers: Answers[] = [];
 
   constructor(private questionsService: QuestionsService) {}
 
   ngOnInit(): void {
-    this.questionsService.getQuestions().subscribe((e) => {
-      this.question = e;
-      this.answers = e.respostas;
-      //   this.answers = i.texto_resposta;
-      // });
-      console.log(e);
-
-      //console.log(this.answers);
+    this.questionsService.getQuestions().subscribe((e: Question[]) => {
+      this.questions = e;
+      e.map((e) => console.log('===>>>>', e.respostas));
     });
     console.log(this.answers);
   }

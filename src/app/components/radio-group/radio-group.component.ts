@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Answers } from './../../models/answers.model';
+import { Question } from './../../models/question.model';
 
 @Component({
   selector: 'app-radio-group',
@@ -6,8 +8,12 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./radio-group.component.scss'],
 })
 export class RadioGroupComponent implements OnInit {
-  @Input() question: string = '';
-  @Input() answers: [] = [];
+  @Input() answers: Answers[] = [];
+  @Input() question: Question = {
+    id_questao: '',
+    respostas: [],
+    texto_questao: '',
+  };
 
   constructor() {}
 

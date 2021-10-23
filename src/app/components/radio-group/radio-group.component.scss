@@ -1,0 +1,12 @@
+@import "../../../assets/styles/generics.scss";
+
+legend {
+  font-size: 22px;
+  font-family: $font-regular;
+  color: $black;
+  margin-bottom: 24px;
+}
+
+.radio-container {
+  margin: 32px 0;
+}

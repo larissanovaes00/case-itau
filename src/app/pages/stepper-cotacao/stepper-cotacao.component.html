@@ -7,68 +7,9 @@
 <div class="container pt-5 pb-5">
   <mat-horizontal-stepper>
     <mat-step label="questionário">
-      <div class="m-32 bottom top">
-        <legend class="color-black regular-22 mb-4">O imóvel está? *</legend>
-        <mat-radio-group aria-label="Select an option">
-          <mat-radio-button value="1" class="w-100 mb-4 radio"
-            >ocupado</mat-radio-button
-          >
-          <mat-radio-button value="2" class="w-100 mb-4"
-            >desocupado</mat-radio-button
-          >
-        </mat-radio-group>
+      <div *ngFor="let q of questions">
+        <app-radio-group [question]="q"></app-radio-group>
       </div>
-      <div class="m-32 bottom">
-        <legend class="color-black regular-22 mb-4">
-          O imóvel foi construído com? *
-        </legend>
-        <mat-radio-group aria-label="Select an option">
-          <mat-radio-button value="1" class="w-100 mb-4"
-            >madeira</mat-radio-button
-          >
-          <mat-radio-button value="2" class="w-100 mb-4"
-            >alvenaria (tijolos, cimento, pedras ou blocos de
-            concreto)</mat-radio-button
-          >
-        </mat-radio-group>
-      </div>
-      <div class="m-32 bottom">
-        <legend class="color-black regular-22 mb-4">
-          O seguro é para qual tipo de imóvel *
-        </legend>
-        <mat-radio-group aria-label="Select an option">
-          <mat-radio-button value="1" class="w-100 mb-4">casa</mat-radio-button>
-          <mat-radio-button value="2" class="w-100 mb-4"
-            >apartamento</mat-radio-button
-          >
-          <mat-radio-button value="2" class="w-100 mb-4"
-            >chácaras, sítios ou fazendas</mat-radio-button
-          >
-        </mat-radio-group>
-      </div>
-      <div class="m-32 bottom">
-        <legend class="color-black regular-22 mb-4">
-          O imóvel está em condomínio fechado? *
-        </legend>
-        <mat-radio-group aria-label="Select an option">
-          <mat-radio-button value="1" class="w-100 mb-4">sim</mat-radio-button>
-          <mat-radio-button value="2" class="w-100 mb-4">não</mat-radio-button>
-        </mat-radio-group>
-      </div>
-      <div class="mb-5">
-        <legend class="color-black regular-22 mb-4">
-          você usa o imóvel para *
-        </legend>
-        <mat-radio-group aria-label="Select an option">
-          <mat-radio-button value="1" class="w-100 mb-4"
-            >moradia</mat-radio-button
-          >
-          <mat-radio-button value="2" class="w-100 mb-4"
-            >veraneio</mat-radio-button
-          >
-        </mat-radio-group>
-      </div>
-
       <div class="w-100">
         <button
           class="button-primary"
@@ -82,12 +23,8 @@
     </mat-step>
 
     <mat-step label="Step 2">
-      <div *ngFor="let q of question">
-        {{ q.texto_questao }}
-        <app-radio-group
-          [title]="q.texto_questao"
-          [answers]="q.respostas"
-        ></app-radio-group>
+      <div>
+        <app-radio-group [questions]="questions"></app-radio-group>
       </div>
     </mat-step>
 

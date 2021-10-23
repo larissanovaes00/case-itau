@@ -1,10 +1,18 @@
-<div class="m-32 bottom top">
-  <legend class="color-black regular-22 mb-4">{{ question }}</legend>
-  <mat-radio-group aria-label="Select an option">
-    <mat-radio-button
-      value="1"
-      class="w-100 mb-4"
-      *ngFor="let answer of answers"
-    ></mat-radio-button>
-  </mat-radio-group>
+<div>
+  <div class="radio-container">
+    <legend id="{{ question.id_questao }}">
+      {{ question.texto_questao }}
+    </legend>
+
+    <mat-radio-group aria-label="Select an option">
+      <mat-radio-button
+        value="{{ answer.texto_resposta }}"
+        class="w-100 mb-4 radio"
+        *ngFor="let answer of question.respostas"
+        id="{{ answer.id_resposta }}"
+      >
+        {{ answer.texto_resposta }}</mat-radio-button
+      >
+    </mat-radio-group>
+  </div>
 </div>

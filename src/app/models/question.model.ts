@@ -1,7 +1,7 @@
 import { Answers } from './answers.model';
 
 export class Question {
-  id_questao?: string;
-  respostas?: Answers[];
-  texto_questao?: string;
+  id_questao: string | undefined;
+  respostas: Answers[] | undefined;
+  texto_questao: string | undefined;
 }
