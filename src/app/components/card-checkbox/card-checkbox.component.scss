@@ -1,0 +1,23 @@
+@import "../../../assets/styles/generics.scss";
+
+.checkmark {
+  width: 40px;
+  height: 40px;
+  border: 1px solid $grey-light;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+
+  & .replace {
+    border: 1px solid $grey-light;
+    background-color: transparent;
+  }
+}
+.check {
+  position: relative;
+  padding-left: 34px;
+  cursor: pointer;
+  display: inline;
+  font-size: 16px;
+}
