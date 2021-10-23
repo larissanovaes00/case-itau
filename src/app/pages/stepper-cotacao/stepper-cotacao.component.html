@@ -81,7 +81,15 @@
       </div>
     </mat-step>
 
-    <mat-step label="Step 2"><app-radio-group></app-radio-group></mat-step>
+    <mat-step label="Step 2">
+      <div *ngFor="let q of question">
+        {{ q.texto_questao }}
+        <app-radio-group
+          [title]="q.texto_questao"
+          [answers]="q.respostas"
+        ></app-radio-group>
+      </div>
+    </mat-step>
 
     <mat-step label="Step 3"> You are now done. </mat-step>
   </mat-horizontal-stepper>

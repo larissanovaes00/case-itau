@@ -1,15 +1,14 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
-@Injectable({providedIn: 'root'})
-
+@Injectable({ providedIn: 'root' })
 export class QuestionsService {
-
   BASE_URL = 'http://localhost:5002';
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {}
 
-  getQuestions(){
-    this.httpClient.get(`${this.BASE_URL}/questions`);
+  getQuestions(): Observable<any> {
+    return this.httpClient.get(`${this.BASE_URL}/questions`);
   }
 }

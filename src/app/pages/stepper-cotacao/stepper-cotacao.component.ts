@@ -1,5 +1,6 @@
 import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
 import { Component, OnInit } from '@angular/core';
+import { QuestionsService } from './../../services/questions/questions.service';
 
 @Component({
   selector: 'app-stepper-cotacao',
@@ -16,9 +17,23 @@ export class StepperCotacaoComponent implements OnInit {
   h1Text = 'quer saber quanto custa seu seguro?';
   h1TextSecondary = 'comece respondendo as perguntas abaixo e descubra :)';
 
-  constructor() {}
+  question: any;
+  answers = [];
 
-  ngOnInit(): void {}
+  constructor(private questionsService: QuestionsService) {}
+
+  ngOnInit(): void {
+    this.questionsService.getQuestions().subscribe((e) => {
+      this.question = e;
+      this.answers = e.respostas;
+      //   this.answers = i.texto_resposta;
+      // });
+      console.log(e);
+
+      //console.log(this.answers);
+    });
+    console.log(this.answers);
+  }
 
   reset = () => {
     console.log('reset');
