@@ -1,0 +1,294 @@
+/************************** COLORS **************************/
+$orange: #ec7000;
+$black: #2b374a;
+$grey-light: #d9d3cf;
+$grey-medium: #969290;
+$grey-dark: #666;
+$blue-medium: #106eb0;
+$white: #fff;
+$box-shadow: 0 0 2px 0 rgb(0 0 0 / 16%), 0 2px 8px 0 rgb(0 0 0 / 18%);
+$box-shadow-focus: 0px 5px 5px -3px rgb(0 0 0 / 20%),
+  0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+
+/************************** FONT-FAMILY **************************/
+$font-regular: "Roboto-Regular";
+$font-bold: "Roboto-Bold";
+$font-medium: "Roboto-Medium";
+$font-black: "Roboto-Black";
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("/assets/fonts/Roboto-Bold.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("/assets/fonts/Roboto-Black.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("/assets/fonts/Roboto-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/assets/fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: $font-regular;
+}
+
+/************************** FONT-SIZE **************************/
+.semibold-46 {
+  font-family: "Roboto-SemiBold";
+  font-size: 46px;
+  line-height: 58px;
+
+  @media (max-width: 575px) {
+    font-size: 2rem;
+    line-height: 1.39;
+  }
+}
+
+.semibold-36 {
+  font-family: "Roboto-SemiBold";
+  font-size: 36px;
+  line-height: 46px;
+
+  @media (max-width: 575px) {
+    font-size: 26px;
+    line-height: 1.39;
+  }
+}
+
+.medium-15 {
+  font-family: "Roboto-Medium";
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.regular-46 {
+  font-family: "Roboto-Regular";
+  font-size: 46px;
+  line-height: 58px;
+  font-weight: 400;
+
+  @media (max-width: 575px) {
+    font-size: 2rem;
+    line-height: 1.39;
+  }
+}
+
+.regular-36 {
+  font-family: "Roboto-Regular";
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 400;
+
+  @media (max-width: 575px) {
+    font-size: 26px;
+    line-height: 1.39;
+  }
+}
+
+.regular-15 {
+  font-family: "Roboto-Regular";
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.regular-14 {
+  font-family: "Roboto-Regular";
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.regular-13 {
+  font-family: "Roboto-Regular";
+  font-size: 13px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/************************** MARGIN / PADDING **************************/
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.m-120 {
+  &.top {
+    margin-top: 120px;
+  }
+
+  &.bottom {
+    margin-bottom: 120px;
+  }
+
+  &.left {
+    margin-left: 120px;
+  }
+
+  &.right {
+    margin-right: 120px;
+  }
+
+  @media (max-width: 575px) {
+    &.top {
+      margin-top: 70px;
+    }
+
+    &.bottom {
+      margin-bottom: 70px;
+    }
+
+    &.left {
+      margin-left: 70px;
+    }
+
+    &.right {
+      margin-right: 70px;
+    }
+  }
+}
+
+.m-30 {
+  &.top {
+    margin-top: 30px;
+  }
+
+  &.bottom {
+    margin-bottom: 30px;
+  }
+
+  &.left {
+    margin-left: 30px;
+  }
+
+  &.right {
+    margin-right: 30px;
+  }
+}
+
+.m-20 {
+  &.top {
+    margin-top: 20px;
+  }
+
+  &.bottom {
+    margin-bottom: 20px;
+  }
+
+  &.left {
+    margin-left: 20px;
+  }
+
+  &.right {
+    margin-right: 20px;
+  }
+}
+
+.m-15 {
+  &.top {
+    margin-top: 15px;
+  }
+
+  &.bottom {
+    margin-bottom: 15px;
+  }
+
+  &.left {
+    margin-left: 15px;
+  }
+
+  &.right {
+    margin-right: 15px;
+  }
+}
+
+.m-10 {
+  &.top {
+    margin-top: 10px;
+  }
+
+  &.bottom {
+    margin-bottom: 10px;
+  }
+
+  &.left {
+    margin-left: 10px;
+  }
+
+  &.right {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .m-md-30 {
+    &.top {
+      margin-top: 30px;
+    }
+
+    &.bottom {
+      margin-bottom: 30px;
+    }
+
+    &.left {
+      margin-left: 30px;
+    }
+
+    &.right {
+      margin-right: 30px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .m-mobile-reset {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .p-mobile-reset {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  .m-mobile-10 {
+    &.top {
+      margin-top: 10px;
+    }
+
+    &.bottom {
+      margin-bottom: 10px;
+    }
+
+    &.left {
+      margin-left: 10px;
+    }
+
+    &.right {
+      margin-right: 10px;
+    }
+  }
+}
