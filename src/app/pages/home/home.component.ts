@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,11 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   buttonText = 'faça sua cotação';
-  constructor() {}
+  h1Text = 'existe coisa melhor do que se sentir seguro em casa?';
+  h1TextSecondary = 'encontre o plano residencial ideal pra você';
+
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 
-  clickButton = () => {
-    console.log('eeeee');
+  navigateCotacaoPage = () => {
+    this.router.navigate(['/cotacao']);
   };
 }

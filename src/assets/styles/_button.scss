@@ -15,4 +15,10 @@
   &:focus {
     box-shadow: $box-shadow-focus;
   }
+
+  &:disabled {
+    background-color: $grey-light;
+    box-shadow: none;
+    color: $grey-medium;
+  }
 }

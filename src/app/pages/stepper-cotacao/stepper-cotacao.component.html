@@ -1,0 +1,88 @@
+<!-- <div class="title-box">
+  <h1 class="bold-32 color-white mb-2">
+    {{ h1Text }}
+    <p class="light-32 color-white">{{ h1TextSecondary }}</p>
+  </h1>
+</div> -->
+<div class="container pt-5 pb-5">
+  <mat-horizontal-stepper>
+    <mat-step label="questionário">
+      <div class="m-32 bottom top">
+        <legend class="color-black regular-22 mb-4">O imóvel está? *</legend>
+        <mat-radio-group aria-label="Select an option">
+          <mat-radio-button value="1" class="w-100 mb-4 radio"
+            >ocupado</mat-radio-button
+          >
+          <mat-radio-button value="2" class="w-100 mb-4"
+            >desocupado</mat-radio-button
+          >
+        </mat-radio-group>
+      </div>
+      <div class="m-32 bottom">
+        <legend class="color-black regular-22 mb-4">
+          O imóvel foi construído com? *
+        </legend>
+        <mat-radio-group aria-label="Select an option">
+          <mat-radio-button value="1" class="w-100 mb-4"
+            >madeira</mat-radio-button
+          >
+          <mat-radio-button value="2" class="w-100 mb-4"
+            >alvenaria (tijolos, cimento, pedras ou blocos de
+            concreto)</mat-radio-button
+          >
+        </mat-radio-group>
+      </div>
+      <div class="m-32 bottom">
+        <legend class="color-black regular-22 mb-4">
+          O seguro é para qual tipo de imóvel *
+        </legend>
+        <mat-radio-group aria-label="Select an option">
+          <mat-radio-button value="1" class="w-100 mb-4">casa</mat-radio-button>
+          <mat-radio-button value="2" class="w-100 mb-4"
+            >apartamento</mat-radio-button
+          >
+          <mat-radio-button value="2" class="w-100 mb-4"
+            >chácaras, sítios ou fazendas</mat-radio-button
+          >
+        </mat-radio-group>
+      </div>
+      <div class="m-32 bottom">
+        <legend class="color-black regular-22 mb-4">
+          O imóvel está em condomínio fechado? *
+        </legend>
+        <mat-radio-group aria-label="Select an option">
+          <mat-radio-button value="1" class="w-100 mb-4">sim</mat-radio-button>
+          <mat-radio-button value="2" class="w-100 mb-4">não</mat-radio-button>
+        </mat-radio-group>
+      </div>
+      <div class="mb-5">
+        <legend class="color-black regular-22 mb-4">
+          você usa o imóvel para *
+        </legend>
+        <mat-radio-group aria-label="Select an option">
+          <mat-radio-button value="1" class="w-100 mb-4"
+            >moradia</mat-radio-button
+          >
+          <mat-radio-button value="2" class="w-100 mb-4"
+            >veraneio</mat-radio-button
+          >
+        </mat-radio-group>
+      </div>
+
+      <div class="w-100">
+        <button
+          class="button-primary"
+          tabindex="0"
+          type="button"
+          matStepperNext
+        >
+          continuar cotação
+        </button>
+      </div>
+    </mat-step>
+
+    <mat-step label="Step 2"> Step 2 content </mat-step>
+
+    <mat-step label="Step 3"> You are now done. </mat-step>
+  </mat-horizontal-stepper>
+</div>

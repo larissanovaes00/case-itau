@@ -1,0 +1,21 @@
+@import "../../../assets/styles/generics.scss";
+
+header {
+  height: 80px;
+  background-color: $white;
+  padding: 1rem 1.5em;
+  display: flex;
+  align-items: center;
+  box-shadow: $box-shadow;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+
+  & a {
+    display: flex;
+  }
+
+  & img {
+    width: 100px;
+  }
+}
