@@ -13,6 +13,10 @@
   display: flex;
   margin-top: 24px;
 
+  .button-outline {
+    margin-right: 16px;
+  }
+
   @media (max-width: 575px) {
     flex-wrap: wrap;
   }

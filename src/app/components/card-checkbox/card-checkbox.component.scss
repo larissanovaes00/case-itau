@@ -11,6 +11,11 @@
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 16px;
+  height: 350px;
+
+  @media (max-width: 575px) {
+    height: auto;
+  }
 
   & input {
     position: absolute;
@@ -71,7 +76,7 @@
 .card-content {
   margin-bottom: 75px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 575px) {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -81,7 +86,7 @@
     font-family: $font-bold;
     font-size: 19px;
     line-height: 24px;
-    @media (max-width: 768px) {
+    @media (max-width: 575px) {
       max-width: 170px;
       margin-right: 24px;
     }
@@ -98,7 +103,12 @@
     justify-content: center;
     margin-bottom: 16px;
 
-    @media (max-width: 768px) {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+
+    @media (max-width: 575px) {
       height: auto;
       width: 150px;
       object-fit: contain;
