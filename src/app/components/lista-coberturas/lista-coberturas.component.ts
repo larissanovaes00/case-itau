@@ -13,4 +13,6 @@ export class ListaCoberturasComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  navigateForm = () => {};
 }
