@@ -14,7 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { RadioGroupComponent } from './components/radio-group/radio-group.component';
 import { HomeComponent } from './pages/home/home.component';
-import { StepperCotacaoComponent } from './pages/stepper-cotacao/stepper-cotacao.component';
+import { StepperCotacaoComponent } from './components/stepper-cotacao/stepper-cotacao.component';
 import { FormTitularSeguroComponent } from './components/form-titular-seguro/form-titular-seguro.component';
 import { PortoSeguroCondicoesComponent } from './components/porto-seguro-condicoes/porto-seguro-condicoes.component';
 import { ListaCoberturasComponent } from './components/lista-coberturas/lista-coberturas.component';
