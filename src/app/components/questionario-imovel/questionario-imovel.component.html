@@ -6,7 +6,11 @@
 </div>
 
 <div *ngFor="let question of questions">
-  <app-radio-group [question]="question" [answers]="answers"></app-radio-group>
+  <app-radio-group
+    [question]="question"
+    [answers]="answers"
+    (value)="change($event)"
+  ></app-radio-group>
 </div>
 <div class="w-100">
   <button class="button-primary" tabindex="0" type="button" matStepperNext>

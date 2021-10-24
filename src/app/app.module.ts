@@ -1,6 +1,6 @@
 import { HttpClientModule } from '@angular/common/http';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -52,6 +52,8 @@ import { ResultadoCotacaoComponent } from './pages/resultado-cotacao/resultado-c
     MatFormFieldModule,
     MatInputModule,
     MatDialogModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
   exports: [],
   providers: [],

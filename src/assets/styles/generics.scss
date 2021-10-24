@@ -41,4 +41,22 @@
   &.right {
     margin-right: 32px;
   }
+
+  .m-16 {
+    &.top {
+      margin-top: 16px;
+    }
+
+    &.bottom {
+      margin-bottom: 16px;
+    }
+
+    &.left {
+      margin-left: 16px;
+    }
+
+    &.right {
+      margin-right: 16px;
+    }
+  }
 }

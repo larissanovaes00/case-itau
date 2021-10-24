@@ -11,8 +11,16 @@
 </div>
 
 <div class="row cards-container mb-5">
-  <div class="col-xs-12 col-sm-6 col-xl-3 card-item" *ngFor="let card of cardInput">
-    <app-card-checkbox [title]="card.nome" [imgUrl]="card.imagem_uri"> </app-card-checkbox>
+  <div
+    class="col-xs-12 col-md-6 col-xl-4 card-item"
+    *ngFor="let card of cardInput"
+  >
+    <app-card-checkbox
+      [title]="card.nome"
+      [imgUrl]="card.imagem_uri"
+      [text]="card.resumo"
+    >
+    </app-card-checkbox>
   </div>
 </div>
 
