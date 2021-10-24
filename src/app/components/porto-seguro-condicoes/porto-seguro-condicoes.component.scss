@@ -1,0 +1,15 @@
+@import "../../../assets/styles/generics.scss";
+
+.content {
+  padding: 12px;
+  background-color: $grey-very-light;
+  p {
+    font-size: 14px;
+    line-height: 18px;
+
+    a {
+      font-family: $font-bold;
+      text-decoration: underline;
+    }
+  }
+}

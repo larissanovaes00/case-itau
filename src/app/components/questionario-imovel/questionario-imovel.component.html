@@ -1,0 +1,15 @@
+<div class="mt-4 mb-5">
+  <h1 class="bold-22 color-black">quer saber quanto custa seu seguro?</h1>
+  <h2 class="regular-22 color-black mb-3">
+    comece respondendo as perguntas abaixo e descubra :)
+  </h2>
+</div>
+
+<div *ngFor="let question of questions">
+  <app-radio-group [question]="question" [answers]="answers"></app-radio-group>
+</div>
+<div class="w-100">
+  <button class="button-primary" tabindex="0" type="button" matStepperNext>
+    continuar cotação
+  </button>
+</div>

@@ -1,51 +1,15 @@
-<!-- <div class="title-box">
-  <h1 class="bold-32 color-white mb-2">
-    {{ h1Text }}
-    <p class="light-32 color-white">{{ h1TextSecondary }}</p>
-  </h1>
-</div> -->
 <div class="container pt-5 pb-5">
   <mat-horizontal-stepper>
     <mat-step label="questionário">
-      <div *ngFor="let question of questions">
-        <app-radio-group
-          [question]="question"
-          [answers]="answers"
-        ></app-radio-group>
-      </div>
-      <div class="w-100">
-        <button
-          class="button-primary"
-          tabindex="0"
-          type="button"
-          matStepperNext
-        >
-          continuar cotação
-        </button>
-      </div>
+      <app-questionario-imovel></app-questionario-imovel>
     </mat-step>
 
-    <mat-step label="Step 2">
-      <div class="row cards-container">
-        <div class="col-xs-12 col-sm-6 col-xl-3 card-item">
-          <app-card-checkbox [title]="title" [imgUrl]="imgUrl">
-          </app-card-checkbox>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-xl-3 card-item">
-          <app-card-checkbox [title]="title" [imgUrl]="imgUrl">
-          </app-card-checkbox>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-xl-3 card-item">
-          <app-card-checkbox [title]="title" [imgUrl]="imgUrl">
-          </app-card-checkbox>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-xl-3 card-item">
-          <app-card-checkbox [title]="title" [imgUrl]="imgUrl">
-          </app-card-checkbox>
-        </div>
-      </div>
+    <mat-step label="coberturas">
+      <app-lista-coberturas></app-lista-coberturas>
     </mat-step>
 
-    <mat-step label="Step 3"> </mat-step>
+    <mat-step label="informações do titular">
+      <app-form-titular-seguro></app-form-titular-seguro>
+    </mat-step>
   </mat-horizontal-stepper>
 </div>
