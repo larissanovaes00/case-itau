@@ -6,17 +6,11 @@ import { CardModel } from '../../models/card.model'
   styleUrls: ['./lista-coberturas.component.scss'],
 })
 export class ListaCoberturasComponent implements OnInit {
-  @Input() cardInput: CardModel[] = [];
 
-  imgUrl =
-    'https://itau-mkt-place-seguros.s3-sa-east-1.amazonaws.com/images/residencial/ilustracoes/incendio.svg';
-  title = 'incêndio, explosão, implosão, fumaça e queda de aeronave';
+  @Input() cardInput: CardModel[] = [];
 
   constructor() {}
 
-  ngOnInit(): void {
-    console.log(this.cardInput);
-
-  }
+  ngOnInit(): void { }
 
 }

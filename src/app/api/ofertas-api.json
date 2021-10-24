@@ -39,6 +39,7 @@
               "resumo": "Cobertura de prejuízos causados por incêndio, queda de raio, fumaça, explosão, implosão e queda de aeronave",
               "cobertura_obrigatoria": true,
               "identificador": "incendio",
+              "imagem_uri": "https://itau-mkt-place-seguros.s3-sa-east-1.amazonaws.com/images/residencial/ilustracoes/incendio.svg",
               "importancias_segurada": [
                 {
                   "tipo": "valor",
@@ -71,6 +72,7 @@
               "descricao": "A geladeira queimou depois de um curto circuito? Você está protegido de danos provocados nas instalações e nos aparelhos elétricos por conta de uma descarga elétrica ou variações anormais de tensão, por exemplo.",
               "resumo": "Cobertura de danos causados às instalações e aparelhos elétricos",
               "cobertura_obrigatoria": false,
+              "imagem_uri": "https://itau-mkt-place-seguros.s3-sa-east-1.amazonaws.com/images/residencial/ilustracoes/de.svg",
               "identificador": "de",
               "importancias_segurada": [
                 {
@@ -105,6 +107,7 @@
               "resumo": "Cobre perdas e danos aos bens da residência em caso de  subtração com ameaça, violencia ou mediante arrombamento",
               "cobertura_obrigatoria": false,
               "identificador": "subbens",
+              "imagem_uri": "https://itau-mkt-place-seguros.s3-sa-east-1.amazonaws.com/images/residencial/ilustracoes/subbens.svg",
               "importancias_segurada": [
                 {
                   "tipo": "valor",
@@ -138,6 +141,7 @@
               "resumo": "Quebra de vidros, box e espelhos, internos ou externos",
               "cobertura_obrigatoria": false,
               "identificador": "vidros",
+              "imagem_uri": "https://itau-mkt-place-seguros.s3-sa-east-1.amazonaws.com/images/residencial/ilustracoes/vidros.svg",
               "importancias_segurada": [
                 {
                   "tipo": "valor",
@@ -171,6 +175,7 @@
               "resumo": "Causou um acidente a outra pessoa ou imóvel? Essa cobertura será útil",
               "cobertura_obrigatoria": false,
               "identificador": "rcfam",
+              "imagem_uri": "https://itau-mkt-place-seguros.s3-sa-east-1.amazonaws.com/images/residencial/ilustracoes/rcfam.svg",
               "importancias_segurada": [
                 {
                   "tipo": "valor",
@@ -203,6 +208,7 @@
               "descricao": "A pia ou a banheira vazou? Pensando em você, temos essa cobertura para reparos da parte hidráulica em casos de vazamento de tubulações.",
               "resumo": "Vazamento de água decorrente a rompimento de tubulação",
               "cobertura_obrigatoria": false,
+              "imagem_uri": "https://itau-mkt-place-seguros.s3-sa-east-1.amazonaws.com/images/residencial/ilustracoes/vaz_tub.svg",
               "identificador": "vaz_tub",
               "importancias_segurada": [
                 {
@@ -237,6 +243,7 @@
               "resumo": "Cobre as despesas de aluguel por um período se a sua casa estiver sem condições de uso",
               "cobertura_obrigatoria": false,
               "identificador": "pagaluguel",
+              "imagem_uri": "https://itau-mkt-place-seguros.s3-sa-east-1.amazonaws.com/images/residencial/ilustracoes/pagaluguel.svg",
               "importancias_segurada": [
                 {
                   "tipo": "valor",
@@ -272,6 +279,7 @@
               "resumo": "Cobertura de equipamentos, utensílios e móveis do seu escritório ou comércio",
               "cobertura_obrigatoria": false,
               "identificador": "neg_casa",
+              "imagem_uri": "data:image/jpeg;base64,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",
               "importancias_segurada": [
                 {
                   "tipo": "valor",
@@ -310,6 +318,7 @@
               "resumo": "Cobre destelhamentos, queda de antenas e de árvores",
               "cobertura_obrigatoria": false,
               "identificador": "vendaval",
+              "imagem_uri": "https://itau-mkt-place-seguros.s3-sa-east-1.amazonaws.com/images/residencial/ilustracoes/vendaval.svg",
               "importancias_segurada": [
                 {
                   "tipo": "valor",
@@ -343,6 +352,7 @@
               "resumo": "Cobertura de conteúdo e os bens incorporados a ela, como antenas",
               "cobertura_obrigatoria": false,
               "identificador": "tremor",
+              "imagem_uri": "https://itau-mkt-place-seguros.s3-sa-east-1.amazonaws.com/images/residencial/ilustracoes/tremor.svg",
               "importancias_segurada": [
                 {
                   "tipo": "valor",
@@ -376,6 +386,7 @@
               "resumo": "Cobre despesas médicas e odontológicas do funcionário na residencia segurada em caso de acidente durante o horário de trabalho",
               "cobertura_obrigatoria": false,
               "identificador": "rc_empregador",
+              "imagem_uri": "data:image/png;base64,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",
               "importancias_segurada": [
                 {
                   "tipo": "valor",
@@ -413,6 +424,7 @@
               "resumo": "Cobertura para a residência em caso de batida por veículos de terceiros",
               "cobertura_obrigatoria": false,
               "identificador": "impacve",
+              "imagem_uri": "https://itau-mkt-place-seguros.s3-sa-east-1.amazonaws.com/images/residencial/ilustracoes/impacve.svg",
               "importancias_segurada": [
                 {
                   "tipo": "valor",
@@ -448,6 +460,7 @@
               "resumo": "Cobertura em caso de subtração da sua bike seguida de ameaça, violência ou arrombamento",
               "cobertura_obrigatoria": false,
               "identificador": "sub_bike",
+              "imagem_uri": "https://itau-mkt-place-seguros.s3-sa-east-1.amazonaws.com/images/residencial/ilustracoes/sub_bike.svg",
               "importancias_segurada": [
                 {
                   "tipo": "valor",

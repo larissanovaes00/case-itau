@@ -3,7 +3,7 @@ export class CardModel {
   descricao?:  string
   resumo?: string;
   cobertura_obrigatoria?: boolean;
-
+  imagem_uri?: string;
   identificador?: string;
   importancias_segurada ?: ISegurada[];
   nao_incluso?: string;
