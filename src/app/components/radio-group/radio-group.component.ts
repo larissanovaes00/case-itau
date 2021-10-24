@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 import { Answers } from './../../models/answers.model';
 import { Question } from './../../models/question.model';
 
@@ -17,6 +18,8 @@ export class RadioGroupComponent implements OnInit {
   @Output() value = new EventEmitter();
 
   @Input() answers: Answers[] = [];
+
+  questionForm: FormGroup | any;
 
   onchange = (event: any) => {
     this.value.emit(event);
