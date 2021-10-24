@@ -1,0 +1,14 @@
+  <div class="radio-container">
+    <legend id="{{ question.id_questao }}"> {{ question.texto_questao }} </legend>
+
+    <mat-radio-group aria-label="Select an option">
+      <mat-radio-button
+        value="{{ answer.texto_resposta }}"
+        class="w-100 mb-4 radio"
+        *ngFor="let answer of question.respostas"
+        id="{{ answer.texto_resposta }}"
+      >
+        {{ answer.texto_resposta }}</mat-radio-button
+      >
+    </mat-radio-group>
+  </div>

@@ -1,3 +1,19 @@
-<p>
-  home works!
-</p>
+<section>
+  <div class="banner-content">
+    <h1 class="bold-48 color-white mb-2">
+      {{ h1Text }}
+      <p class="light-48 color-white mb-2">{{ h1TextSecondary }}</p>
+    </h1>
+    <div class="w-100">
+      <button
+        class="button-primary"
+        tabindex="0"
+        type="button"
+        (click)="navigateCotacaoPage()"
+      >
+        {{ buttonText }}
+      </button>
+    </div>
+  </div>
+  <app-stepper-cotacao></app-stepper-cotacao>
+</section>

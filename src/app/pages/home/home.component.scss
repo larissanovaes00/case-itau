@@ -1,0 +1,21 @@
+section {
+  background-image: url("https://itau-mkt-place-seguros.s3-sa-east-1.amazonaws.com/images/residencial/img-banner.png");
+  height: 440px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+.banner-content {
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  max-width: 900px;
+
+  @media (max-width: 575px) {
+    padding: 24px;
+  }
+}

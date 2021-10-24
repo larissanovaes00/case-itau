@@ -1,0 +1,10 @@
+@import "../../../assets/styles/generics.scss";
+
+::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: $orange !important; /*inner circle color change*/
+}
+
+::ng-deep.mat-radio-button.mat-accent.mat-radio-checked
+  .mat-radio-outer-circle {
+  border-color: $orange !important; /*outer ring color change*/
+}

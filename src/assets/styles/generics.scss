@@ -1,0 +1,44 @@
+@import "./colors";
+@import "./fonts";
+
+/************************** MARGIN / PADDING **************************/
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-48 {
+  &.top {
+    padding-top: 48px;
+  }
+
+  &.bottom {
+    padding-bottom: 48px;
+  }
+
+  &.left {
+    padding-left: 48px;
+  }
+
+  &.right {
+    padding-right: 48px;
+  }
+}
+
+.m-32 {
+  &.top {
+    margin-top: 32px;
+  }
+
+  &.bottom {
+    margin-bottom: 32px;
+  }
+
+  &.left {
+    margin-left: 32px;
+  }
+
+  &.right {
+    margin-right: 32px;
+  }
+}
