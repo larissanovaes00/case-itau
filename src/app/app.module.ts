@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardCheckboxComponent } from './components/card-checkbox/card-checkbox.component';
+import { CardCotacaoComponent } from './components/card-cotacao/card-cotacao.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FormTitularSeguroComponent } from './components/form-titular-seguro/form-titular-seguro.component';
 import { ListaCoberturasComponent } from './components/lista-coberturas/lista-coberturas.component';
@@ -21,6 +22,7 @@ import { QuestionarioImovelComponent } from './components/questionario-imovel/qu
 import { RadioGroupComponent } from './components/radio-group/radio-group.component';
 import { StepperCotacaoComponent } from './components/stepper-cotacao/stepper-cotacao.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ResultadoCotacaoComponent } from './pages/resultado-cotacao/resultado-cotacao.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { HomeComponent } from './pages/home/home.component';
     ListaCoberturasComponent,
     QuestionarioImovelComponent,
     ModalComponent,
+    ResultadoCotacaoComponent,
+    CardCotacaoComponent,
   ],
   imports: [
     BrowserModule,
