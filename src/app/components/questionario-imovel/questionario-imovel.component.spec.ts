@@ -1,5 +1,5 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { QuestionarioImovelComponent } from './questionario-imovel.component';
 
 describe('QuestionarioImovelComponent', () => {
@@ -8,9 +8,9 @@ describe('QuestionarioImovelComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ QuestionarioImovelComponent ]
-    })
-    .compileComponents();
+      imports: [HttpClientTestingModule],
+      declarations: [QuestionarioImovelComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
