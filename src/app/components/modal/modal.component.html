@@ -1,0 +1,32 @@
+<div class="d-flex justify-content-between align-items-center">
+  <div class="modal-image d-none d-sm-flex">
+    <img
+      src="https://itau-mkt-place-seguros.s3-sa-east-1.amazonaws.com/images/residencial/ilustracoes/resid-modal-block-icone-alerta-seguros.svg"
+      alt="poxa! este seguro residencial não é válido para imóveis de madeira ou local desocupado"
+    />
+  </div>
+  <div class="mb-4 text-content">
+    <h2 class="bold-22 color-black mb-4">cotação do meu seguro residencial</h2>
+    <p class="regular-16 color-black">
+      poxa! este seguro residencial não é válido para imóveis de madeira ou
+      local desocupado. mas você pode contratar o seguro para um imóvel de
+      alvenaria, sendo casa, apartamento ou chácara que esteja ocupado.
+    </p>
+    <div class="button-container">
+      <button
+        class="button-outline small m-16 right"
+        tabindex="1"
+        (click)="navigateHome()"
+      >
+        voltar a página inicial
+      </button>
+      <button
+        class="button-primary small"
+        tabindex="2"
+        (click)="navigateHome()"
+      >
+        cotar outro tipo de imóvel
+      </button>
+    </div>
+  </div>
+</div>

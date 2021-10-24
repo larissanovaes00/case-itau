@@ -1,14 +1,18 @@
 <div class="container pt-5 pb-5">
-  <mat-horizontal-stepper>
-    <mat-step label="questionário">
+  <mat-horizontal-stepper role="tablist">
+    <mat-step label="questionário" role="tab" aria-label="questionário">
       <app-questionario-imovel></app-questionario-imovel>
     </mat-step>
 
-    <mat-step label="coberturas">
+    <mat-step label="coberturas" role="tab" aria-label="coberturas">
       <app-lista-coberturas></app-lista-coberturas>
     </mat-step>
 
-    <mat-step label="informações do titular">
+    <mat-step
+      label="informações do titular"
+      role="tab"
+      aria-label="informações do titular"
+    >
       <app-form-titular-seguro></app-form-titular-seguro>
     </mat-step>
   </mat-horizontal-stepper>

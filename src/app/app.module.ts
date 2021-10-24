@@ -1,6 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
@@ -13,6 +14,7 @@ import { CardCheckboxComponent } from './components/card-checkbox/card-checkbox.
 import { FooterComponent } from './components/footer/footer.component';
 import { FormTitularSeguroComponent } from './components/form-titular-seguro/form-titular-seguro.component';
 import { ListaCoberturasComponent } from './components/lista-coberturas/lista-coberturas.component';
+import { ModalComponent } from './components/modal/modal.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PortoSeguroCondicoesComponent } from './components/porto-seguro-condicoes/porto-seguro-condicoes.component';
 import { QuestionarioImovelComponent } from './components/questionario-imovel/questionario-imovel.component';
@@ -33,6 +35,7 @@ import { HomeComponent } from './pages/home/home.component';
     PortoSeguroCondicoesComponent,
     ListaCoberturasComponent,
     QuestionarioImovelComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,6 +47,7 @@ import { HomeComponent } from './pages/home/home.component';
     HttpClientModule,
     MatFormFieldModule,
     MatInputModule,
+    MatDialogModule,
   ],
   exports: [],
   providers: [],
