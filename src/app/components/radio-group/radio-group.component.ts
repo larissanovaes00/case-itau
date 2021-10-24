@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Answers } from './../../models/answers.model';
 import { Question } from './../../models/question.model';
 
@@ -13,9 +13,14 @@ export class RadioGroupComponent implements OnInit {
     texto_questao: '',
     respostas: [],
   };
+
+  @Output() value = new EventEmitter();
+
   @Input() answers: Answers[] = [];
 
-  constructor() {}
+  onchange = (event: any) => {
+    this.value.emit(event);
+  };
 
   ngOnInit(): void {}
 }

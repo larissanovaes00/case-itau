@@ -42,4 +42,8 @@ export class QuestionarioImovelComponent implements OnInit {
   closeModal = () => {
     this.dialog.closeAll();
   };
+
+  change = (e: any) => {
+    console.log(e);
+  };
 }
