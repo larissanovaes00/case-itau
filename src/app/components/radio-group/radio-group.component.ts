@@ -8,12 +8,12 @@ import { Question } from './../../models/question.model';
   styleUrls: ['./radio-group.component.scss'],
 })
 export class RadioGroupComponent implements OnInit {
-  @Input() answers: Answers[] = [];
   @Input() question: Question = {
     id_questao: '',
-    respostas: [],
     texto_questao: '',
+    respostas: [],
   };
+  @Input() answers: Answers[] = [];
 
   constructor() {}
 

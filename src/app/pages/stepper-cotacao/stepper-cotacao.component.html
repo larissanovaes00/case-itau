@@ -7,8 +7,11 @@
 <div class="container pt-5 pb-5">
   <mat-horizontal-stepper>
     <mat-step label="questionário">
-      <div *ngFor="let q of questions">
-        <!-- <app-radio-group [question]="q"></app-radio-group> -->
+      <div *ngFor="let question of questions">
+        <app-radio-group
+          [question]="question"
+          [answers]="answers"
+        ></app-radio-group>
       </div>
       <div class="w-100">
         <button

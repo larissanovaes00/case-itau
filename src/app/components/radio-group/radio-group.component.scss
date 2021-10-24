@@ -9,4 +9,21 @@ legend {
 
 .radio-container {
   margin: 32px 0;
+
+  input {
+    opacity: 0;
+  }
+}
+
+::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: $orange !important; /*inner circle color change*/
+}
+
+::ng-deep .mat-radio-input {
+  opacity: 0 !important; /*inner circle color change*/
+}
+
+::ng-deep.mat-radio-button.mat-accent.mat-radio-checked
+  .mat-radio-outer-circle {
+  border-color: $orange !important; /*outer ring color change*/
 }

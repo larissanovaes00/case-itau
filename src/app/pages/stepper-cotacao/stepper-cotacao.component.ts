@@ -1,5 +1,7 @@
 import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
 import { Component, OnInit } from '@angular/core';
+import { map } from 'rxjs/operators';
+import { Answers } from 'src/app/models/answers.model';
 import { Question } from './../../models/question.model';
 import { QuestionsService } from './../../services/questions/questions.service';
 
@@ -23,16 +25,21 @@ export class StepperCotacaoComponent implements OnInit {
   title = 'incêndio, explosão, implosão, fumaça e queda de aeronave';
 
   questions: Question[] = [];
+  answers: Answers[] = [];
 
   constructor(private questionsService: QuestionsService) {}
 
-  ngOnInit(): void {
-    this.questionsService.getQuestions().subscribe((e: Question[]) => {
-      this.questions = e;
-    });
+  ngOnInit() {
+    return this.questionsService
+      .getQuestions()
+      .pipe(
+        map((res) => {
+          this.questions = res;
+          this.answers = res.map((e) => e.respostas) as Answers[];
+        })
+      )
+      .subscribe();
   }
 
-  reset = () => {
-    console.log('reset');
-  };
+  reset = () => {};
 }
