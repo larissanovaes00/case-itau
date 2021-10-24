@@ -1,0 +1,19 @@
+.text-content {
+  max-width: 75%;
+
+  @media (max-width: 575px) {
+    max-width: 100%;
+  }
+}
+
+.modal-image {
+  max-width: 25%;
+}
+.button-container {
+  display: flex;
+  margin-top: 24px;
+
+  @media (max-width: 575px) {
+    flex-wrap: wrap;
+  }
+}
