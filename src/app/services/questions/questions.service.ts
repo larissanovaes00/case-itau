@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Questions } from 'src/app/models/question.model';
 
 @Injectable({ providedIn: 'root' })
 export class QuestionsService {
@@ -8,7 +9,7 @@ export class QuestionsService {
 
   constructor(private httpClient: HttpClient) {}
 
-  getQuestions(): Observable<any> {
-    return this.httpClient.get(`${this.BASE_URL}/questions`);
+  getQuestions(): Observable<Questions[]> {
+    return this.httpClient.get<Questions[]>(`${this.BASE_URL}/questions`);
   }
 }
