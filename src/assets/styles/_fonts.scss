@@ -1,0 +1,115 @@
+$font-regular: "Roboto-Regular";
+$font-bold: "Roboto-Bold";
+$font-medium: "Roboto-Medium";
+$font-black: "Roboto-Black";
+$font-light: "Roboto-Light";
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("/assets/fonts/Roboto-Bold.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("/assets/fonts/Roboto-Black.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("/assets/fonts/Roboto-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/assets/fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("/assets/fonts/Roboto-Light.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: $font-regular;
+}
+
+/************************** FONT-SIZE **************************/
+.bold-48 {
+  font-family: "Roboto-Bold";
+  font-size: 48px;
+  line-height: 64px;
+
+  @media (max-width: 575px) {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+.bold-32 {
+  font-family: "Roboto-Bold";
+  font-size: 32px;
+  line-height: 48px;
+
+  @media (max-width: 575px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.regular-16 {
+  font-family: "Roboto-Regular";
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.regular-22 {
+  font-family: "Roboto-Regular";
+  font-size: 22px;
+  line-height: 32px;
+  @media (max-width: 575px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.bold-22 {
+  font-family: "Roboto-Bold";
+  font-size: 22px;
+  line-height: 32px;
+  @media (max-width: 575px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.light-48 {
+  font-family: "Roboto-Light";
+  font-size: 48px;
+  line-height: 64px;
+  @media (max-width: 575px) {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+.light-32 {
+  font-family: "Roboto-Light";
+  font-size: 32px;
+  line-height: 48px;
+  @media (max-width: 575px) {
+    font-size: 24px;
+    line-height: 16px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}

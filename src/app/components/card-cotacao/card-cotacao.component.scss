@@ -1,0 +1,48 @@
+@import "../../../assets/styles/generics.scss";
+
+.card-container {
+  max-width: 500px;
+  background-color: $black;
+  box-shadow: $box-shadow;
+  border-radius: 5px;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 24px;
+
+    p {
+      width: 100%;
+    }
+  }
+
+  .card-body {
+    padding: 24px;
+
+    ul {
+      padding-left: 24px;
+      color: $white;
+      font-size: 1.125rem;
+      line-height: 1.4375rem;
+      font-family: $font-medium;
+      margin-bottom: 24px;
+      p {
+        margin-bottom: 8px;
+        margin-left: -16px;
+      }
+
+      li {
+        list-style: disc;
+        font-size: 0.9375rem;
+        line-height: 1.43;
+        font-family: $font-light;
+      }
+    }
+  }
+}

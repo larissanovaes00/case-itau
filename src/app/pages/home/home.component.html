@@ -1,3 +1,21 @@
-<p>
-  home works!
-</p>
+<section>
+  <div class="banner-content">
+    <h1 class="bold-48 color-white mb-2">
+      {{ h1Text }}
+      <p class="light-48 color-white mb-2">{{ h1TextSecondary }}</p>
+    </h1>
+    <div class="w-100">
+      <button
+        class="button-primary"
+        tabindex="0"
+        type="button"
+        (click)="scrollStepper()"
+      >
+        {{ buttonText }}
+      </button>
+    </div>
+  </div>
+  <div #stepper>
+    <app-stepper-cotacao></app-stepper-cotacao>
+  </div>
+</section>
