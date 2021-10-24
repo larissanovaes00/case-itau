@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { map } from 'rxjs/operators';
 import { Answers } from 'src/app/models/answers.model';
 import { Question } from 'src/app/models/question.model';
 import { QuestionsService } from 'src/app/services/questions/questions.service';
+import { ModalComponent } from '../modal/modal.component';
 
 @Component({
   selector: 'app-questionario-imovel',
@@ -12,7 +14,10 @@ import { QuestionsService } from 'src/app/services/questions/questions.service';
 export class QuestionarioImovelComponent implements OnInit {
   questions: Question[] = [];
   answers: Answers[] = [];
-  constructor(private questionsService: QuestionsService) {}
+  constructor(
+    private questionsService: QuestionsService,
+    private dialog: MatDialog
+  ) {}
 
   ngOnInit() {
     return this.questionsService
@@ -26,5 +31,15 @@ export class QuestionarioImovelComponent implements OnInit {
       .subscribe();
   }
 
-  reset = () => {};
+  openModal = () => {
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.disableClose = false;
+    dialogConfig.autoFocus = true;
+    dialogConfig.width = '60%';
+    this.dialog.open(ModalComponent, dialogConfig);
+  };
+
+  closeModal = () => {
+    this.dialog.closeAll();
+  };
 }

@@ -9,11 +9,13 @@
         class="button-primary"
         tabindex="0"
         type="button"
-        (click)="navigateCotacaoPage()"
+        (click)="scrollStepper()"
       >
         {{ buttonText }}
       </button>
     </div>
   </div>
-  <app-stepper-cotacao></app-stepper-cotacao>
+  <div #stepper>
+    <app-stepper-cotacao></app-stepper-cotacao>
+  </div>
 </section>
