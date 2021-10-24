@@ -4,11 +4,11 @@
   padding: 32px 48px;
 }
 
-::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle {
-  background-color: $orange !important; /*inner circle color change*/
-}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
 
-::ng-deep.mat-radio-button.mat-accent.mat-radio-checked
-  .mat-radio-outer-circle {
-  border-color: $orange !important; /*outer ring color change*/
+  .card-item {
+    margin: 16px;
+  }
 }
