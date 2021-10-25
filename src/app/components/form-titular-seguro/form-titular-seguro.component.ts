@@ -51,9 +51,7 @@ export class FormTitularSeguroComponent implements OnInit {
       });
   }
 
-  onSubmit() {
-    console.log(this.formularioTitular);
-  }
+  onSubmit() {}
 
   getCep(cep: string) {
     this.cepService.consultaCEP(cep).subscribe((e) => {
