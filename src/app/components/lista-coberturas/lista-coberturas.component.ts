@@ -25,7 +25,6 @@ export class ListaCoberturasComponent implements OnInit {
       this.cardForm.push({
         id_cobertura: e.id_cobertura,
       });
-    // localStorage.setItem('Questionario-imovel', JSON.stringify(this.cardForm));
-    console.log(e);
+    localStorage.setItem('Questionario-imovel', JSON.stringify(this.cardForm));
   }
 }
