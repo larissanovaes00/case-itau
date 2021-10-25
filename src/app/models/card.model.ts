@@ -1,14 +1,17 @@
+import { Cobertura } from './offerFom.model';
 export class CardModel {
+  id_cobertura?: string | undefined;
   nome?: string;
-  descricao?:  string
+  descricao?: string;
   resumo?: string;
   cobertura_obrigatoria?: boolean;
   imagem_uri?: string;
   identificador?: string;
-  importancias_segurada ?: ISegurada[];
+  importancia_segurada?: Cobertura[];
+  importancias_segurada?: number;
   nao_incluso?: string;
   dependencias?: string;
-  ocultar_descricao?: boolean
+  ocultar_descricao?: boolean;
 }
 
 export class ISegurada {
@@ -16,12 +19,10 @@ export class ISegurada {
   minimo?: number;
   maximo?: number;
   incremento?: number;
-  valor_sugerido?: IValorSugerido[]
+  valor_sugerido?: IValorSugerido[];
 }
 
 export class IValorSugerido {
   tipo_imovel?: number;
   valor?: number;
 }
-
-

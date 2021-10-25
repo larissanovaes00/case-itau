@@ -1,5 +1,9 @@
 <label class="checkbox-container" tabindex="{{ tabIndex }}" role="checkbox">
-  <input type="checkbox" checked="{{ active }}" />
+  <input
+    type="checkbox"
+    checked="{{ active }}"
+    (change)="change($event, id, importancia)"
+  />
   <div class="checkmark"></div>
   <div class="card-content">
     <div class="card-image">

@@ -7,7 +7,12 @@
       class="w-100 mb-4 radio"
       *ngFor="let answer of question.respostas"
       id="{{ answer.texto_resposta }}"
-      (onchange)="onchange(answer.texto_resposta)"
+      (change)="
+        onchange({
+          id_questao: question.id_questao,
+          resposta: answer.id_resposta
+        })
+      "
     >
       {{ answer.texto_resposta }}</mat-radio-button
     >

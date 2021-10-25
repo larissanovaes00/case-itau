@@ -3,6 +3,7 @@ import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { map } from 'rxjs/operators';
 import { Answers } from 'src/app/models/answers.model';
 import { Question } from 'src/app/models/question.model';
+import { Questions } from 'src/app/models/questions.model';
 import { QuestionsService } from 'src/app/services/questions/questions.service';
 import { ModalComponent } from '../modal/modal.component';
 
@@ -14,6 +15,9 @@ import { ModalComponent } from '../modal/modal.component';
 export class QuestionarioImovelComponent implements OnInit {
   questions: Question[] = [];
   answers: Answers[] = [];
+
+  formData: Questions[] = [];
+
   constructor(
     private questionsService: QuestionsService,
     private dialog: MatDialog
@@ -43,7 +47,15 @@ export class QuestionarioImovelComponent implements OnInit {
     this.dialog.closeAll();
   };
 
-  change = (e: any) => {
-    console.log(e);
+  change = (e: Questions) => {
+    if (
+      this.formData.findIndex((el: any, index) => {
+        if (el.id_questao === e.id_questao) {
+          this.formData.splice(index, 1);
+        }
+      })
+    )
+      this.formData.push(e);
+    localStorage.setItem('Questionario-imovel', JSON.stringify(this.formData));
   };
 }
