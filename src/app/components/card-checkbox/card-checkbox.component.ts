@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-card-checkbox',
@@ -12,9 +12,20 @@ export class CardCheckboxComponent implements OnInit {
   @Input() linkPath: string = '';
   @Input() active: boolean = false;
   @Input() tabIndex: number = 0;
-  @Input() id: string = '';
+  @Input() id: string | undefined = '';
+  @Input() importancia: number | undefined = 0;
+
+  @Output() values = new EventEmitter();
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  change(e: any, id: any, importancia: any) {
+    this.values.emit({
+      id_cobertura: id,
+      checked: e.target.checked,
+      importancia_segurada: importancia,
+    });
+  }
 }

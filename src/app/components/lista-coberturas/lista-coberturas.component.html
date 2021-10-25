@@ -19,6 +19,9 @@
       [title]="card.nome"
       [imgUrl]="card.imagem_uri"
       [text]="card.resumo"
+      [id]="card.id_cobertura"
+      [importancia]="3500"
+      (values)="changes($event)"
     >
     </app-card-checkbox>
   </div>
